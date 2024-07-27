@@ -37,6 +37,10 @@ git config --global --unset alias.<alias-name>
 
 ## Submodules
 
+```bash
+git submodule add <repository> <path>
+```
+
 ## Subtrees
 
 [Git Subtree](https://www.geeksforgeeks.org/git-subtree/) by Geeks for Geeks
