@@ -30,4 +30,5 @@ This repository contains a collection of documents, guides and notes that we cre
 
 ## Utility Documents
 
+- [AI Prompts](./ai_prompts.md)
 - [Email Spam Keywords CSV](./email-spam-keywords.csv)
