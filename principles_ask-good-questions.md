@@ -1,6 +1,6 @@
 # On Asking Good Questions
 
-> "Dumb" questions are better than assuming answer.
+> A "Dumb" question is better than assuming the answer.
 >
 > > Joey Grable
 
