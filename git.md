@@ -16,6 +16,7 @@
       - [Unset an alias](#unset-an-alias)
   - [Submodules](#submodules)
   - [Subtrees](#subtrees)
+  - [Pre-commit Hooks](#pre-commit-hooks)
 
 ## Basic Configuration
 
@@ -49,3 +50,9 @@ git submodule add <repository> <path>
 [Git Subtrees vs Submodules](https://training.github.com/downloads/submodule-vs-subtree-cheat-sheet/) by GitHub
 
 ![git subtrees](./ref/gitSubTrees.png)
+
+## Pre-commit Hooks
+
+```bash
+pre-commit install
+```
