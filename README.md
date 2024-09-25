@@ -5,10 +5,13 @@ This repository contains a collection of documents, guides and notes that we cre
 ## Core Principles
 
 - [Asking Good Questions](./principles_ask-good-questions.md)
+- [Sofware Planning and Technical Documentation](./planning_software-planning-and-technical-documentation.md)
+- [UTM Tracking Links](./tracking_utm-link-builder.md)
 
 ## Code Management
 
 - [Git & GitHub](./git.md)
+- [PNPM](./pnpm.md)
 - [S.O.L.I.D. Programming Principles](./principles_SOLID-programming.md)
 - [FSD Feature Sliced Design](./architecture_frontend-feature-sliced-design.md)
 
@@ -23,6 +26,10 @@ This repository contains a collection of documents, guides and notes that we cre
 - [Python Essentials 1](./language_python-essentials-1.md)
 - [Python Essentials 2](./language_python-essentials-2.md)
 - [SQL - Structured Query Language](./language_sql-structured-query-language.md)
+
+### Software Libraries and Frameworks
+
+- [SolidJS](./resources_solidjs.md)
 
 ## APIs
 
