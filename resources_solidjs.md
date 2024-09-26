@@ -12,7 +12,7 @@
 - [Dervivations in Reactivity](https://dev.to/this-is-learning/derivations-in-reactivity-4fo1)
 - [Polling an API with setInterval](https://rapidapi.com/guides/api-requests-intervals)
 
-## Tools and Libraries
+## Tools
 
 - [Tanstack Query](https://tanstack.com/query/latest/docs/framework/solid/overview)
 - [Tanstack Virtual](https://tanstack.com/virtual/latest/docs/introduction)
@@ -22,3 +22,7 @@
   - [Tanstack Table Row Sorting API](https://tanstack.com/table/v8/docs/api/features/sorting)
   - [Tanstack Table Ex: Column Visibility](https://tanstack.com/table/v8/docs/framework/solid/examples/column-visibility)
 - [Tanstack Query Graphql Request](https://github.com/TanStack/query/tree/main/examples/solid/basic-graphql-request)
+
+## UX/UI Libraries
+
+- [Solid UI](https://www.solid-ui.com/)
