@@ -10,7 +10,8 @@
 ## Concepts and Principles
 
 - [Dervivations in Reactivity](https://dev.to/this-is-learning/derivations-in-reactivity-4fo1)
-- [Polling an API with setInterval](https://rapidapi.com/guides/api-requests-intervals)
+- [API Polling with setInterval](https://rapidapi.com/guides/api-requests-intervals)
+- [API Polling with SetTimeout](https://dev.to/igadii/think-twice-before-using-setinterval-for-api-polling-it-might-not-be-ideal-3n3)
 
 ## Tools
 
@@ -25,4 +26,12 @@
 
 ## UX/UI Libraries
 
+- [Solid MediaKit](https://github.com/solidjs-community/mediakit)
+- [Solid-Primatives](https://github.com/solidjs-community/solid-primitives)
 - [Solid UI](https://www.solid-ui.com/)
+- [Modular Forms](https://modularforms.dev/)
+- [Solid Date Picker](https://soliddatepicker.netlify.app/)
+
+## Coding How To's
+
+- [Verify Google Recaptcha Using SSR, Server Side Rendering](https://peterkellner.net/2023/09/18/How-to-Use-Googles-ReCaptcha-V3-with-NextJS-13-and-the-New-App-Router/)
