@@ -4,6 +4,7 @@ This repository contains a collection of documents, guides and notes that we cre
 
 ## Core Principles
 
+- [Programming Principles & Values](./principles_programming-values.md)
 - [Asking Good Questions](./principles_ask-good-questions.md)
 - [Sofware Planning and Technical Documentation](./planning_software-planning-and-technical-documentation.md)
 - [UTM Tracking Links](./tracking_utm-link-builder.md)
