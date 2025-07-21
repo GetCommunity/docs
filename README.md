@@ -31,6 +31,7 @@ This repository contains a collection of documents, guides and notes that we cre
 ### Software Libraries and Frameworks
 
 - [SolidJS](./resources_solidjs.md)
+- [Strapi](./resources_strapi.md)
 
 ## APIs
 
