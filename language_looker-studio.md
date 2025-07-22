@@ -2,6 +2,16 @@
 
 ## Regular Expressions
 
+### Google Analytics
+
+```bash
+# Week Value (text)
+FORMAT_DATETIME('%m/%d/%Y', DATETIME_TRUNC(Date, WEEK))
+
+# Week Date (Date)
+PARSE_DATE("%m/%d/%Y", Week Value)
+```
+
 ### Google Ads
 
 ```bash
