@@ -16,3 +16,8 @@
 - [Integrate AWS with Strapi](https://strapi.io/integrations/aws)
 - [Deploying a Strapi API on AWS (EC2 & RDS & S3)](https://github.com/61FINTECH/deploy-strapi-on-aws)
 - [PM2 Process Manager](https://pm2.keymetrics.io/docs/usage/process-management/)
+
+## Strapi User Authentication Guides
+
+- [Strapi 2FA Example Backend](https://github.com/emekaemego/strapi-2fa-backend/tree/main)
+- [Strapi 2FA Example Frontend](https://github.com/emekaemego/strapi-2fa-frontend/tree/main)
