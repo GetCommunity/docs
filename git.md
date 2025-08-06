@@ -29,6 +29,12 @@ git config --global alias.cm commit
 git config --global alias.st status
 git config --global alias.sw switch
 git config --global alias.last 'log -1 HEAD'
+alias.log-graph log --oneline --graph --all --decorate
+git config --global alias.merge-main-with-prod '!git switch main && git merge production && git push origin main && git switch production'
+
+# to list all git aliases
+git config --get-regexp ^alias\.
+
 ```
 
 #### Unset an alias
