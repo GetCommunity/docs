@@ -64,7 +64,7 @@ flowchart LR
 
 ### Product Documentation
 
-*What should the product be like?*
+_What should the product be like?_
 
 A **Product** is a system with set of features that helps users achieve their goals.
 
@@ -177,7 +177,7 @@ Test cases are detailed descriptions of what features should be tested and how s
 
 ### Process Documentation
 
-*How are we going to build it?*
+_How are we going to build it?_
 
 The process document explains how the product should be built and all the processes around the product. The primary tool in the process document is the product roadmap. The product roadmap is broken down into three main sections: strategy roadmap, technology roadmap, and release roadmap.
 
@@ -213,7 +213,7 @@ Project metrics provide regular feedback on how fast and effective the work is. 
 
 **Cycle Time**: the time it takes for a task to move from the start of the process to the end.
 
-**Cumulative Flow**: a chart that show  the progress of activities done in the sprint.
+**Cumulative Flow**: a chart that show the progress of activities done in the sprint.
 
 **Flow Efficiency**: the percentage of time that a task is actively being worked on.
 
@@ -231,14 +231,14 @@ McCabe Cyclomatic Complexity (MCC): a common metric used to measure the complexi
 
 The team should establish best practices that every team member can use to create consistent code and design. Standards may be established for code, tests, design, documentation, and more.
 
-----
+---
 
 ## Additional Resource & Tools
 
 ### Mistakes Can be Prevented by Over Preparing
 
-- Don't start working on feature before you start working on features.
-- Written documentation is betten that spoken history.
+- Don't start working on feature before you start working on feature documentation.
+- Written documentation is better than spoken history.
 
 ### The Gantt Chart
 
@@ -255,3 +255,5 @@ gantt
         Task in Another :2024-01-12, 12d
         another task    :24d
 ```
+
+Incident Reports are catalogued in the IncidentReports tab.
