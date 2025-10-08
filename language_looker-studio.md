@@ -49,3 +49,28 @@ REGEXP_EXTRACT(Destination URL, "[?&]utm_medium=([^&]+)")
 # Session Source
 REGEXP_EXTRACT(Destination URL, "[?&]utm_source=([^&]+)")
 ```
+
+### Posted Time (PST)
+
+- Posted Time (PST)
+- AKA Date Time
+
+```bash
+# Facebook
+DATETIME_SUB(Published, INTERVAL 7 HOUR)
+
+# Instagram
+DATETIME_SUB(Timestamp, INTERVAL 7 HOUR)
+
+# LinkedIn
+DATETIME_SUB(Date And Time, INTERVAL 7 HOUR)
+
+# X/Twitter
+DATETIME_SUB(Date And Time, INTERVAL 7 HOUR)
+
+# YouTube
+DATETIME_SUB(Date, INTERVAL 7 HOUR)
+
+# TikTok
+DATETIME_SUB(Post Time, INTERVAL 7 HOUR)
+```

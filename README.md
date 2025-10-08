@@ -41,3 +41,7 @@ This repository contains a collection of documents, guides and notes that we cre
 
 - [AI Prompts](./ai_prompts.md)
 - [Email Spam Keywords CSV](./email-spam-keywords.csv)
+
+## Big Data
+
+- [Data Pipelines](./data_data-pipelines.md)
