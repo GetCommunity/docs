@@ -45,3 +45,4 @@ This repository contains a collection of documents, guides and notes that we cre
 ## Big Data
 
 - [Data Pipelines](./data_data-pipelines.md)
+- [Data Storage](./data_data-storage.md)
