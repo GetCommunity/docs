@@ -10,6 +10,38 @@ FORMAT_DATETIME('%m/%d/%Y', DATETIME_TRUNC(Date, WEEK))
 
 # Week Date (Date)
 PARSE_DATE("%m/%d/%Y", Week Value)
+
+# Campaign Phase
+CASE
+  WHEN STARTS_WITH(Session Campaign Name, "p1-") THEN "Phase 1"
+  WHEN STARTS_WITH(Session Campaign Name, "p2-") THEN "Phase 2"
+  WHEN STARTS_WITH(Session Campaign Name, "p3-") THEN "Phase 3"
+  WHEN STARTS_WITH(Session Campaign Name, "p4-") THEN "Phase 4"
+  WHEN STARTS_WITH(Session Campaign Name, "p5-") THEN "Phase 5"
+  WHEN STARTS_WITH(Session Campaign Name, "brand") THEN "Brand"
+  ELSE "(not set)"
+END
+
+# Content Pillar
+CASE
+  WHEN STARTS_WITH(Session Manual Ad Content, "testimonial") THEN "Testimonials"
+  WHEN STARTS_WITH(Session Manual Ad Content, "agent") THEN "Agent Videos"
+  WHEN STARTS_WITH(Session Manual Ad Content, "education") THEN "Education"
+  WHEN STARTS_WITH(Session Manual Ad Content, "charity") THEN "Charity"
+  WHEN STARTS_WITH(Session Manual Ad Content, "recruitment") THEN "Recruitment"
+  WHEN STARTS_WITH(Session Manual Ad Content, "lifestyle") THEN "Location/Lifestyle"
+  WHEN STARTS_WITH(Session Manual Ad Content, "milestone") THEN "Milestone"
+  WHEN STARTS_WITH(Session Manual Ad Content, "trends") THEN "Trends"
+  WHEN STARTS_WITH(Session Manual Ad Content, "brand") THEN "Brand"
+  WHEN STARTS_WITH(Session Manual Ad Content, "events") THEN "Events"
+  WHEN STARTS_WITH(Session Manual Ad Content, "live_better") THEN "Live Better"
+  WHEN STARTS_WITH(Session Manual Ad Content, "personalization") THEN "Personalization"
+  WHEN STARTS_WITH(Session Manual Ad Content, "product") THEN "Product"
+  WHEN STARTS_WITH(Session Manual Ad Content, "recipes") THEN "Recipes"
+  WHEN STARTS_WITH(Session Manual Ad Content, "chefmolly") THEN "Chef Molly"
+  WHEN STARTS_WITH(Session Manual Ad Content, "other") THEN "Other"
+  ELSE "(not set)"
+END
 ```
 
 ### Google Ads
