@@ -66,20 +66,23 @@ REGEXP_EXTRACT(Final URL, "[?&]utm_source=([^&]+)")
 ### Facebook Ads
 
 ```bash
-# Session Campaign
+# Utm Campaign
 REGEXP_EXTRACT(Destination URL, "[?&]utm_campaign=([^&]+)")
 
-# Session Content
+# Utm Content
 REGEXP_EXTRACT(Destination URL, "[?&]utm_content=([^&]+)")
 
-# Session Creative Format
-REGEXP_EXTRACT(Destination URL, "[?&]utm_creative_format=([^&]+)")
-
-# Session Medium
+# Utm Medium
 REGEXP_EXTRACT(Destination URL, "[?&]utm_medium=([^&]+)")
 
-# Session Source
+# Utm Source
 REGEXP_EXTRACT(Destination URL, "[?&]utm_source=([^&]+)")
+
+# Utm Creative Format
+REGEXP_EXTRACT(Destination URL, "[?&]utm_creative_format=([^&]+)")
+
+# Utm ID
+REGEXP_EXTRACT(Destination URL, "[?&]utm_id=([^&]+)")
 ```
 
 ### Posted Time (PST)

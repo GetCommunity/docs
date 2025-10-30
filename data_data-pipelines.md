@@ -1,5 +1,34 @@
 # Data Pipelines
 
+## Data Source Checklist
+
+- Who will we work with?
+- How will the data be used?
+- What's the frequency of data updates?
+- What is the expected data volume?
+- What is the format?
+- What is the quality?
+- How will the data be stored?
+
+```plaintext
+Who will we collaborate with?
+    Engineering (Payments)
+How will the data be used?
+    Financial reporting and quarterly strategizing
+Are there multiple sources?
+    Yes
+What’s the format?
+    Semi-structured APIs (Stripe and Internal)
+What’s the frequency?
+    Hourly
+What’s the volume?
+    Approximately 1K new rows/day, with an existing pool of ~100K
+What processing is required?
+    Data tidying, such as column renaming, and enrichment from supplementary sources
+How will the data be stored?
+    Storing staged data in Delta tables via Databricks
+```
+
 ## Data Pipeline Architecture
 
 1. **Ingestion Layer:** It retrieves data from an assortment of sources ranging from databases to APIs or even event streams.
