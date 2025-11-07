@@ -5,6 +5,45 @@
 ### Google Analytics
 
 ```bash
+# Day of the Week
+CASE
+    WHEN WEEKDAY(Date) = 0 THEN "Sunday"
+    WHEN WEEKDAY(Date) = 1 THEN "Monday"
+    WHEN WEEKDAY(Date) = 2 THEN "Tuesday"
+    WHEN WEEKDAY(Date) = 3 THEN "Wednesday"
+    WHEN WEEKDAY(Date) = 4 THEN "Thursday"
+    WHEN WEEKDAY(Date) = 5 THEN "Friday"
+    WHEN WEEKDAY(Date) = 6 THEN "Saturday"
+END
+
+# Time
+CASE
+    WHEN Hour = "0" THEN "12 AM"
+    WHEN Hour = "1" THEN "1 AM"
+    WHEN Hour = "2" THEN "2 AM"
+    WHEN Hour = "3" THEN "3 AM"
+    WHEN Hour = "4" THEN "4 AM"
+    WHEN Hour = "5" THEN "5 AM"
+    WHEN Hour = "6" THEN "6 AM"
+    WHEN Hour = "7" THEN "7 AM"
+    WHEN Hour = "8" THEN "8 AM"
+    WHEN Hour = "9" THEN "9 AM"
+    WHEN Hour = "10" THEN "10 AM"
+    WHEN Hour = "11" THEN "11 AM"
+    WHEN Hour = "12" THEN "12 PM"
+    WHEN Hour = "13" THEN "1 PM"
+    WHEN Hour = "14" THEN "2 PM"
+    WHEN Hour = "15" THEN "3 PM"
+    WHEN Hour = "16" THEN "4 PM"
+    WHEN Hour = "17" THEN "5 PM"
+    WHEN Hour = "18" THEN "6 PM"
+    WHEN Hour = "19" THEN "7 PM"
+    WHEN Hour = "20" THEN "8 PM"
+    WHEN Hour = "21" THEN "9 PM"
+    WHEN Hour = "22" THEN "10 PM"
+    WHEN Hour = "23" THEN "11 PM"
+END
+
 # Week Value (text)
 FORMAT_DATETIME('%m/%d/%Y', DATETIME_TRUNC(Date, WEEK))
 
