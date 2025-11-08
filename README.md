@@ -46,3 +46,5 @@ This repository contains a collection of documents, guides and notes that we cre
 
 - [Data Pipelines](./data_data-pipelines.md)
 - [Data Storage](./data_data-storage.md)
+- [Data Fact Tables](./data_data-types-of-fact-tables.md)
+- [Data Modeling](./data_data-modeling.md)
