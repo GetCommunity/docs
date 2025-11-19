@@ -83,7 +83,7 @@ git branch backup/main-$(date +%Y%m%d-%H%M%S)
 git reset --hard upstream/main
 ```
 
-To keep origin/main’s history and adopt upstream/main’s content without rebasing or force-pushing by doing a special merge that preserves your current tree but records origin’s history: 
+To keep origin/main’s history and adopt upstream/main’s content without rebasing or force-pushing by doing a special merge that preserves your current tree but records origin’s history:
 
 ```bash
 # create a merge commit that **keeps your current files** (the upstream snapshot)
