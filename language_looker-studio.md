@@ -136,12 +136,37 @@ DATETIME_SUB(Published, INTERVAL 7 HOUR)
 # Instagram
 DATETIME_SUB(Timestamp, INTERVAL 7 HOUR)
 
-# LinkedIn
-DATETIME_SUB(Date And Time, INTERVAL 7 HOUR)
-
 # X/Twitter
 DATETIME_SUB(Date And Time, INTERVAL 7 HOUR)
 
 # YouTube
 DATETIME_SUB(Date, INTERVAL 7 HOUR)
+
+# LinkedIn
+DATETIME_SUB(Date And Time, INTERVAL 7 HOUR)
+```
+
+## Days Since Posted
+
+Days Since Posted
+Days Ago
+
+```bash
+# Facebook
+DATE_DIFF(CURRENT_DATE(), Published)
+
+# Instagram
+DATE_DIFF(CURRENT_DATE(), Posted Time (PST))
+
+# X/Twitter
+DATE_DIFF(CURRENT_DATE(), Posted Time (PST))
+
+# YouTube
+DATE_DIFF(CURRENT_DATE(), Posted Time (PST))
+
+# LinkedIn
+DATE_DIFF(CURRENT_DATE(), Posted Time (PST))
+
+# TikTok
+DATE_DIFF(CURRENT_DATE(), Post Time)
 ```
