@@ -1,5 +1,11 @@
 # Data Pipelines
 
+## Tools
+
+- [Apache Spark](https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_df.html)
+- [Apache Airflow](https://airflow.apache.org/docs/apache-airflow/stable/tutorial/pipeline.html)
+- [Apache Iceberg Python](https://py.iceberg.apache.org/)
+
 ## Data Source Checklist
 
 - Who will we work with?
