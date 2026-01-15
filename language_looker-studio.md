@@ -4,6 +4,15 @@
 
 ### Google Analytics
 
+```plaintext
+# GC Organic Traffic Net
+(?i)gc-social|gc-blast|gc-flow|gc-signage|gc-content|gc-popup|gc-press_release|gc-pdf_content
+
+
+# GC Paid Traffic Net
+(?i)gc-paid|gc-flow|gc-signage|gc-paid_ctv|gc-popup|gc-press_release|gc-pdf_content
+```
+
 ```bash
 # Day of the Week
 CASE
