@@ -18,6 +18,9 @@
   - [Subtrees](#subtrees)
   - [Pre-commit Hooks](#pre-commit-hooks)
   - [Rebase Upsteam Branch Into Current Main Branch](#rebase-upsteam-branch-into-current-main-branch)
+  - [Reverting to a Previous Commit](#reverting-to-a-previous-commit)
+    - [Case 1: You want to rewrite history (force main back)](#case-1-you-want-to-rewrite-history-force-main-back)
+    - [Case 2: You want to keep history intact (recommended for shared repos)](#case-2-you-want-to-keep-history-intact-recommended-for-shared-repos)
 
 ## Basic Configuration
 
@@ -103,3 +106,58 @@ git clean -fd
 # push to your origin, rewriting its main to match upstream
 git push origin main --force-with-lease
 ```
+
+## Reverting to a Previous Commit
+
+Identify the commit hash you want.
+
+```bash
+git log --oneline
+```
+
+### Case 1: You want to rewrite history (force main back)
+
+Use this only if you’re okay rewriting history (e.g. solo work or team agrees).
+
+```bash
+# Make sure you're on main
+git checkout main
+
+# Hard reset main to the desired commit
+git reset --hard abc1234
+```
+
+At this point:
+
+- `main` HEAD == `abc1234`
+- All commits after it are gone from this branch (but still recoverable via reflog)
+
+If the bad commit was already pushed
+
+```bash
+git push --force origin main
+```
+
+### Case 2: You want to keep history intact (recommended for shared repos)
+
+This creates a new commit that undoes the bad commits, without rewriting history.
+
+Assume:
+
+- `abc1234` = good commit
+- `HEAD` contains bad commits
+
+```bash
+git checkout main
+git revert abc1234..HEAD
+```
+
+Then push normally:
+
+```bash
+git push origin main
+```
+
+✔ Safe
+✔ No force push
+✘ Leaves revert commits in history
