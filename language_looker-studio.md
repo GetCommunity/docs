@@ -2,6 +2,49 @@
 
 ## Regular Expressions
 
+### GC Data Database
+
+period
+
+```bash
+PARSE_DATE("%Y-%m", CONCAT(year, "-", month))
+```
+
+Client
+
+```bash
+CASE
+  WHEN teamwork_id = "187061" THEN "BIASC"
+  WHEN teamwork_id = "173885" THEN "Brandywine Homes"
+  WHEN teamwork_id = "124090" THEN "CDC Designs"
+  WHEN teamwork_id = "146636" THEN "Chameleon Design"
+  WHEN teamwork_id = "54883" THEN "Get Community Inc"
+  WHEN teamwork_id = "1384180" THEN "Gold Key Development"
+  WHEN teamwork_id = "1383643" THEN "Mayfair Communities"
+  WHEN teamwork_id = "130123" THEN "Olson Homes"
+  WHEN teamwork_id = "184891" THEN "Priest Ranch Winery"
+  WHEN teamwork_id = "144048" THEN "River Islands"
+  WHEN teamwork_id = "189976" THEN "Shea Carolina"
+  WHEN teamwork_id = "168351" THEN "Shea Corporate"
+  WHEN teamwork_id = "166962" THEN "Shea NorCal"
+  WHEN teamwork_id = "158079" THEN "Shea San Diego"
+  WHEN teamwork_id = "55100" THEN "Shea SoCal"
+  WHEN teamwork_id = "192717" THEN "Shea The Hill District"
+  WHEN teamwork_id = "186301" THEN "Shea Trilogy"
+  WHEN teamwork_id = "180168" THEN "Sub-Zero West"
+  WHEN teamwork_id = "190089" THEN "Toll Brothers Arizona"
+  WHEN teamwork_id = "155618" THEN "Toll Brothers NorCal"
+  WHEN teamwork_id = "163375" THEN "Toll Brothers Santa Clarita"
+  WHEN teamwork_id = "101252" THEN "Toll Brothers SoCal"
+  WHEN teamwork_id = "179170" THEN "Trumark Homes"
+  WHEN teamwork_id = "192553" THEN "Trumark The Collective at Manteca"
+  WHEN teamwork_id = "185714" THEN "Van Daele Homes"
+  WHEN teamwork_id = "55950" THEN "Woodbridge Pacific Group"
+  WHEN teamwork_id = "185051" THEN "Woodbridge Pacific Group Idaho"
+  ELSE "Unknown"
+END
+```
+
 ### Google Analytics
 
 ```plaintext
@@ -155,7 +198,7 @@ DATETIME_SUB(Date, INTERVAL 7 HOUR)
 DATETIME_SUB(Date And Time, INTERVAL 7 HOUR)
 ```
 
-## Days Since Posted
+### Days Since Posted
 
 Days Since Posted
 Days Ago
