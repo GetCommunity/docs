@@ -10,6 +10,12 @@ period
 PARSE_DATE("%Y-%m", CONCAT(year, "-", month))
 ```
 
+date_hour
+
+```bash
+PARSE_DATETIME("%Y-%m-%d %H", FORMAT_DATETIME("%Y-%m-%d %H", publish_time))
+```
+
 Client
 
 ```bash
@@ -101,6 +107,7 @@ FORMAT_DATETIME('%m/%d/%Y', DATETIME_TRUNC(Date, WEEK))
 
 # Week Date (Date)
 PARSE_DATE("%m/%d/%Y", Week Value)
+# 'Week' w (M/d/YYYY)
 
 # Campaign Phase
 CASE
@@ -221,4 +228,16 @@ DATE_DIFF(CURRENT_DATE(), Posted Time (PST))
 
 # TikTok
 DATE_DIFF(CURRENT_DATE(), Post Time)
+```
+
+### GC Fly Tours
+
+```bash
+# Day of the Week
+CASE
+    WHEN mobile THEN "Mobile"
+    WHEN tablet THEN "Tablet"
+    WHEN desktop THEN "Desktop"
+    ELSE "Other"
+END
 ```

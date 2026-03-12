@@ -11,8 +11,13 @@ This repository contains a collection of documents, guides and notes that we cre
 
 ## Code Management
 
-- [Git & GitHub](./git.md)
-- [PNPM](./pnpm.md)
+- [1Password](./tool_1password.md)
+- [Git & GitHub](./tool_git.md)
+- [PNPM](./tool_pnpm.md)
+- [tmux](./tool_tmux.md)
+
+## Software Architecture
+
 - [S.O.L.I.D. Programming Principles](./principles_SOLID-programming.md)
 - [FSD Feature Sliced Design](./architecture_frontend-feature-sliced-design.md)
 
