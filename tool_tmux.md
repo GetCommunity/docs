@@ -46,11 +46,12 @@ Ctrl+b r
 
 ## Basic Commands
 
-| Command                       | Action                            |
-|-------------------------------|------------------------------------|
-| `tmux new -s session_name`    | Create a new tmux session          |
-| `tmux ls`                     | List all tmux sessions             |
-| `tmux attach -t session_name` | Attach to an existing tmux session |
+| Command                             | Action                             |
+|-------------------------------------|------------------------------------|
+| `tmux new -s session_name`          | Create a new tmux session          |
+| `tmux ls`                           | List all tmux sessions             |
+| `tmux attach -t session_name`       | Attach to an existing tmux session |
+| `tmux kill-session -t session_name` | Terminate an existing tmux session |
 
 ## Window Management
 
@@ -77,3 +78,25 @@ Ctrl+b r
 | Command    | Action            |
 |------------|-------------------|
 | `Ctrl+b [` | Enter scroll mode |
+
+## Persistent Sessions
+
+First clone `tpm` (tmux plugin manager) to manage your tmux plugins:
+
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+Edit your `~/.tmux.conf` file to include the following lines to enable the tmux plugin manager and add any desired plugins:
+
+```bash
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+
+# Enable automatic restore upon tmux server start
+set -g @continuum-restore 'on'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
+```

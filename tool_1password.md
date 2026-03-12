@@ -10,6 +10,25 @@
 
 To install the 1Password CLI, you can follow the instructions provided in the [official documentation](https://developer.1password.com/docs/cli/get-started#install).
 
+### Installing 1Password CLI on a Server
+
+To install the 1Password CLI on a Linux amd64 server, you can use the following command:
+
+```bash
+ARCH="amd64"; \
+    OP_VERSION="v$(curl https://app-updates.agilebits.com/check/1/0/CLI2/en/2.0.0/N -s | grep -Eo '[0-9]+\.[0-9]+\.[0-9]+')"; \
+    curl -sSfo op.zip \
+    https://cache.agilebits.com/dist/1P/op2/pkg/"$OP_VERSION"/op_linux_"$ARCH"_"$OP_VERSION".zip \
+    && unzip -od /usr/local/bin/ op.zip \
+    && rm op.zip
+```
+
+### Installing 1Password CLI in a Docker Container
+
+```Dockerfile
+COPY --from=1password/op:2 /usr/local/bin/op /usr/local/bin/op
+```
+
 ### Using the 1Password CLI
 
 Once you have the `op` CLI installed, you can use it to retrieve secrets from your 1Password vault. For example, you can use the following command to inject secrets into your environment:
