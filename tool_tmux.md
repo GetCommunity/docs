@@ -2,17 +2,19 @@
 
 ## Configuration
 
-Edit the `~/.tmux.conf` file to customize your tmux configuration. Below is an example of a basic configuration that changes the prefix key to Ctrl+a, which is a common choice among tmux users.
+Edit the `~/.tmux.conf` file to customize your tmux configuration. Below is an example of a basic configuration that changes the prefix key to Ctrl+b, which is a common choice among tmux users.
+
+code ~/.tmux.conf
 
 ```bash
 # ~/.tmux.conf
 # Set true color (24-bit color) support
 set-option -sa terminal-overrides ",xterm:Tc"
 
-# Set prefix
-unbind C-b
-set -g prefix C-a
-bind C-a send-prefix
+# # Set prefix to Ctrl+a (instead of the default Ctrl+b)
+# unbind C-b
+# set -g prefix C-a
+# bind C-a send-prefix
 
 # Enable mouse support
 set -g mouse on
@@ -40,7 +42,6 @@ run '~/.tmux/plugins/tpm/tpm'
 ```bash
 # Reload tmux configuration without restarting
 Ctrl+b r
-Ctrl+a r
 ```
 
 ## Basic Commands
@@ -55,24 +56,24 @@ Ctrl+a r
 
 | Command    | Action                          |
 |------------|---------------------------------|
-| `Ctrl+a c` | Create a new tmux window        |
-| `Ctrl+a w` | List all windows                |
-| `Ctrl+a n` | Switch to the next window       |
-| `Ctrl+a p` | Switch to the previous window   |
-| `Ctrl+a ,` | Rename the current window       |
-| `Ctrl+a d` | Detach from the current session |
+| `Ctrl+b c` | Create a new tmux window        |
+| `Ctrl+b w` | List all windows                |
+| `Ctrl+b n` | Switch to the next window       |
+| `Ctrl+b p` | Switch to the previous window   |
+| `Ctrl+b ,` | Rename the current window       |
+| `Ctrl+b d` | Detach from the current session |
 
 ## Pane Management
 
 | Command            | Action                                |
 |--------------------|---------------------------------------|
-| `Ctrl+a arrow key` | Move between panes                    |
+| `Ctrl+b arrow key` | Move between panes                    |
 | `exit`             | Close the current pane                |
-| `Ctrl+a %`         | Split the current window vertically   |
-| `Ctrl+a "`         | Split the current window horizontally |
+| `Ctrl+b %`         | Split the current window vertically   |
+| `Ctrl+b "`         | Split the current window horizontally |
 
 ## Scroll Mode
 
 | Command    | Action            |
 |------------|-------------------|
-| `Ctrl+a [` | Enter scroll mode |
+| `Ctrl+b [` | Enter scroll mode |
