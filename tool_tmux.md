@@ -62,6 +62,7 @@ Ctrl+b r
 | `Ctrl+b n` | Switch to the next window       |
 | `Ctrl+b p` | Switch to the previous window   |
 | `Ctrl+b ,` | Rename the current window       |
+| `Ctrl+b &` | Close the current window        |
 | `Ctrl+b d` | Detach from the current session |
 
 ## Pane Management
