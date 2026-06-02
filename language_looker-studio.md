@@ -10,6 +10,12 @@ period
 PARSE_DATE("%Y-%m", CONCAT(year, "-", month))
 ```
 
+Date Month Start
+
+```bash
+PARSE_DATE("%m/1/%Y", CONCAT(Month, "/1/", Year))
+```
+
 date_hour
 
 ```bash
@@ -53,17 +59,21 @@ END
 
 ### Google Analytics
 
-```plaintext
-# GC Organic Traffic Net
-(?i)gc-social|gc-blast|gc-flow|gc-signage|gc-content|gc-popup|gc-press_release|gc-pdf_content
+AI Bot Traffic: session source medium
 
+`(?i).*gpt.*|.*openai.*|.*neeva.*|.*writesonic.*|.*nimble.*|.*outrider.*|.*perplexity.*|.*google.*bard.*|.*bard.*google.*|.*edgeservices.*|.*gemini.*google.*|.*meta\.ai.*|.*mistral.*|.*copilot.*|.*deepseek.*|.*claude\.ai.*`
 
-# GC Paid Traffic Net
-(?i)gc-paid|gc-flow|gc-signage|gc-paid_ctv|gc-popup|gc-press_release|gc-pdf_content
-```
+GC Organic Traffic Net: medium
+
+`(?i)gc-social|gc-blast|gc-flow|gc-signage|gc-content|gc-popup|gc-press_release|gc-pdf_content`
+
+GC Paid Traffic Net: medium
+
+`(?i)gc-paid|gc-flow|gc-signage|gc-paid_ctv|gc-popup|gc-press_release|gc-pdf_content`
+
+Day of the Week
 
 ```bash
-# Day of the Week
 CASE
     WHEN WEEKDAY(Date) = 0 THEN "Sunday"
     WHEN WEEKDAY(Date) = 1 THEN "Monday"
@@ -73,8 +83,11 @@ CASE
     WHEN WEEKDAY(Date) = 5 THEN "Friday"
     WHEN WEEKDAY(Date) = 6 THEN "Saturday"
 END
+```
 
-# Time
+Time
+
+```bash
 CASE
     WHEN Hour = "0" THEN "12 AM"
     WHEN Hour = "1" THEN "1 AM"
@@ -101,15 +114,21 @@ CASE
     WHEN Hour = "22" THEN "10 PM"
     WHEN Hour = "23" THEN "11 PM"
 END
+```
 
-# Week Value (text)
-FORMAT_DATETIME('%m/%d/%Y', DATETIME_TRUNC(Date, WEEK))
+Week Value (text)
 
-# Week Date (Date)
-PARSE_DATE("%m/%d/%Y", Week Value)
-# 'Week' w (M/d/YYYY)
+`FORMAT_DATETIME('%m/%d/%Y', DATETIME_TRUNC(Date, WEEK))`
 
-# Campaign Phase
+Week Date (Date)
+
+`PARSE_DATE("%m/%d/%Y", Week Value)`
+
+'Week' w (M/d/YYYY)
+
+Campaign Phase
+
+```bash
 CASE
   WHEN STARTS_WITH(Session Campaign Name, "p1-") THEN "Phase 1"
   WHEN STARTS_WITH(Session Campaign Name, "p2-") THEN "Phase 2"
@@ -119,8 +138,11 @@ CASE
   WHEN STARTS_WITH(Session Campaign Name, "brand") THEN "Brand"
   ELSE "(not set)"
 END
+```
 
-# Content Pillar
+Content Pillar
+
+```bash
 CASE
   WHEN STARTS_WITH(Session Manual Ad Content, "testimonial") THEN "Testimonials"
   WHEN STARTS_WITH(Session Manual Ad Content, "agent") THEN "Agent Videos"

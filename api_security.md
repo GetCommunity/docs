@@ -3,6 +3,7 @@
 ## Futher Reading
 
 - [OWASP API Security Project](https://owasp.org/www-project-api-security/)
+- [OWASP Top 10](https://github.com/OWASP/Top10)
 - [Open Web Application Security Project](https://owasp.org/www-project-top-ten/)
 - [API Sec University](https://www.apisecuniversity.com/)
 - [API Security Fundamentals Course](https://youtu.be/o6d6BjX-Iys)
