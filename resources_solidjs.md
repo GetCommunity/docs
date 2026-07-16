@@ -29,6 +29,7 @@
 - [Solid MediaKit](https://github.com/solidjs-community/mediakit)
 - [Solid-Primatives](https://github.com/solidjs-community/solid-primitives)
 - [Solid UI](https://www.solid-ui.com/)
+  - `pnpm dlx shadcn@beta add @solid-ui/resizable`
 - [Modular Forms](https://modularforms.dev/)
 - [Solid Date Picker](https://soliddatepicker.netlify.app/)
 
