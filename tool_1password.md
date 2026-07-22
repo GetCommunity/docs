@@ -33,11 +33,26 @@ COPY --from=1password/op:2 /usr/local/bin/op /usr/local/bin/op
 
 Once you have the `op` CLI installed, you can use it to retrieve secrets from your 1Password vault. For example, you can use the following command to inject secrets into your environment:
 
+### Logging Into 1Password
+
+```bash
+# Add Account
+op account add
+# Enter account URL, email, secret key, and account password
+# > getcommunityinc.1password.com
+
+# Sign In
+eval $(op signin)
+```
+
+### Loading Secrents from Env Templates
+
 ```bash
 # Create .env files from templates
 op inject -i .env.template.dev -o .dev.vars
 op inject -i .env.template.dev -o .env
 op inject -i .env.template.prod -o .env.prod
+op inject -i .env.template.test -o .env.test
 
 # Start development server with environment variables
 op run --env-file=.env.template.dev -- pnpm dev
