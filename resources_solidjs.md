@@ -30,6 +30,7 @@
 - [Solid-Primatives](https://github.com/solidjs-community/solid-primitives)
 - [Solid UI](https://www.solid-ui.com/)
   - `pnpm dlx shadcn@beta add @solid-ui/resizable`
+  - `pnpm dlx shadcn@latest add @solid-ui/button`
 - [Modular Forms](https://modularforms.dev/)
 - [Solid Date Picker](https://soliddatepicker.netlify.app/)
 
