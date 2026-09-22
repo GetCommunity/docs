@@ -103,11 +103,11 @@ let an_array: number[] = [1, 2, 3, ...];
 
 ```typescript
 function myTypedFunction(
- x: string = "Hello",
- y: number[] = [1,2,3]
+  x: string = "Hello",
+  y: number[] = [1,2,3]
 ): string[] {
- ...
- return ['list', 'of', 'strings']
+  ...
+  return ['list', 'of', 'strings']
 }
 ```
 
