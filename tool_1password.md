@@ -55,10 +55,10 @@ op inject -i .env.template.prod -o .env.prod
 op inject -i .env.template.test -o .env.test
 
 # Start development server with environment variables
-op run --env-file=.env.template.dev -- pnpm dev
+op run --no-masking --env-file=.env.template.dev -- pnpm dev
 
 # Build production with environment variables
-op run --env-file=.env.template.prod -- pnpm build
+op run --no-masking --env-file=.env.template.prod -- pnpm build
 ```
 
 ### Loading Secrets into the Shell
